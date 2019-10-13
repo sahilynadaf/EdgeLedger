@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+#Home {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(68, 68, 68, 0.9);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    color: #fff;
+    z-index: 1;
+}
+
+#Home h1 {
+    font-size: 1.5rem;
+}
+
+#Home .logo {
+    color: rgb(34, 155, 34);
+}
+
+.nav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-content li a {
+    padding: 1.2rem;
+    color: rgb(34, 165, 34);
+}
+
+.nav-content li a:hover {
+    color: #eeeeee;
+    background-color: #333;
+    border-radius: 0.31rem;
+}
+
+
+/* Showcase */
+
+
+/* #Showcase {
+    text-align: center;
+    background: url("image_resources/showcase.jpg") no-repeat center center/auto #555;
+    opacity: 0.8;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    margin-top: -3.8rem;
+
+}
+
+#Showcase .background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+} */
+
+#Showcase {
+    background: #333 url("image_resources/showcase.jpg") no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    margin-top: -60px;
+}
+
+#Showcase .background {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Showcase .Showcase-logo {
+    color: rgb(34, 255, 34);
+}
+
+#Showcase .Showcase-heading,
+#Showcase .Showcase-text {
+    padding: 0.5rem;
+}
+
+#Showcase .showcase-link {
+    color: rgb(34, 155, 34);
+    background-color: #fff;
+    padding: 0.8rem;
+    border-radius: 0.31rem;
+    transition: 500ms;
+    transition-timing-function: ease-in;
+}
+
+#Showcase .showcase-link:hover {
+    background-color: rgb(34, 155, 34);
+    color: #fff;
+    box-shadow: 0.1rem 0.8rem 0.8rem 0.1rem rgba(255, 255, 255, 0.9);
+}
+
+
+/* What */
+
+#What {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eeeeee;
+}
+
+.What-heading {
+    margin: 1rem;
+}
+
+.What-heading span {
+    color: rgb(34, 255, 34);
+}
+
+.What-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-1 i,
+.article-2 i,
+.article-3 i {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(34, 255, 34);
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.article-1 p,
+.article-2 p,
+.article-3 p {
+    line-height: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+
+/* Who */
+
+#Who {
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    color: #eeeeee;
+    align-content: center;
+}
+
+#Who .Who-img {
+    background: url("image_resources/people.jpg") no-repeat center center/cover;
+    padding: 0 1rem 0 0;
+    flex: 1;
+}
+
+#Who .Who-info {
+    background-color: #333;
+    line-height: 2rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+#Who .Who-info span {
+    color: rgb(34, 255, 34);
+}
+
+#Who .Who-info h2 {
+    margin-bottom: 1.5rem;
+}
+
+#Who .Who-info h3 {
+    margin: 1rem 0 0.3rem 0;
+}
+
+#Who .Who-info ul li {
+    border-bottom: 0.8px dotted #222;
+    margin: 1rem;
+}
+
+
+/* Client */
+
+#Client {
+    background-color: #eeeeee;
+}
+
+#Client span {
+    color: rgb(34, 255, 34);
+}
+
+#Client h2 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.Client-Logos {
+    display: flex;
+    padding: 1rem;
+}
+
+.Client-Logos img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+
+/* Contact */
+
+#Contact {
+    display: flex;
+}
+
+#Contact .Contact-form {
+    flex: 1;
+    background-color: rgb(34, 155, 34);
+    color: #fff;
+    padding: 2rem;
+}
+
+#Contact .Map {
+    flex: 1;
+}
+
+#Contact label {
+    display: block;
+    margin: 0.5rem;
+}
+
+#Contact input,
+#Contact textarea {
+    margin: 0.5rem;
+    width: 80%;
+    height: 2rem;
+    border-radius: 0.325rem;
+    border: none;
+    text-align: center;
+}
+
+#Contact textarea {
+    margin-bottom: 1rem;
+}
+
+#Contact input:focus,
+#Contact textarea:focus {
+    outline: none;
+}
+
+#Contact h1 {
+    margin-bottom: 0.5rem;
+}
+
+#Contact .Contact-form a {
+    color: rgb(34, 155, 34);
+    background-color: #fff;
+    padding: 0.8rem;
+    border-radius: 0.31rem;
+    transition: 500ms;
+    transition-timing-function: ease-in;
+    text-align: center;
+    margin-left: 8rem;
+}
+
+#Contact .Contact-form a:hover {
+    background-color: rgb(34, 155, 34);
+    color: #fff;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: rgb(34, 255, 34);
+    text-decoration-line: underline;
+    transition: 400ms;
+    transition-timing-function: ease-in;
+    font-size: 1.3rem;
+}
+
+footer a:hover {
+    color: #fff;
+}

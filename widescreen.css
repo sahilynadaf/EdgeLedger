@@ -1,0 +1,32 @@
+ .What-content {
+     display: flex;
+     justify-content: space-evenly;
+     flex: 1;
+     text-align: center;
+     margin-bottom: 2rem;
+ }
+ 
+ #What .What-content article {
+     display: flex;
+     text-align: left;
+ }
+ 
+ #What .What-content article i {
+     align-self: center;
+     margin: 0 5px 0 5px;
+ }
+ 
+ #What .What-content article div {
+     padding: 1rem;
+     align-content: space-between;
+ }
+ 
+ #What .What-content article div h1,
+ #What .What-content article div p {
+     margin: 0;
+     padding: 0rem;
+ }
+ 
+ #Contact .Map {
+     flex: 2;
+ }
